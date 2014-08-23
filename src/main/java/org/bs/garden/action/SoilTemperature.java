@@ -24,7 +24,12 @@ public class SoilTemperature extends Temperature {
 
     @Override
     public BaseLocal nextEstimatedEvent(final Map<String, Object> context) {
-        final String zipCode = context.get(Action.CONTEXT_CURRENT_ZIPCODE);
+        //get the user's zip code
+        final String zipCode = (String) context.get(Action.CONTEXT_CURRENT_ZIPCODE);
+        //figure out the zone
+        //figure out what the ground temps are
+        //find the next day that meets the temp.
+        throw new UnsupportedOperationException("Not implemented");
     }
 
 }

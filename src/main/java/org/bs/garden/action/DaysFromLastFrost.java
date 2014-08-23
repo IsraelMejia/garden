@@ -1,6 +1,8 @@
 package org.bs.garden.action;
 
+import java.util.Map;
 import org.bs.garden.Action;
+import org.joda.time.base.BaseLocal;
 
 /**
  * Represents the number days before or after the last frost.
@@ -31,6 +33,11 @@ public class DaysFromLastFrost extends Action {
 
     public void setDays(Integer days) {
         this.days = days;
+    }
+
+    @Override
+    public BaseLocal nextEstimatedEvent(Map<String, Object> context) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
